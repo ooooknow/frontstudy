@@ -1,0 +1,107 @@
+
+/*
+  重置样式
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 0;
+}
+
+html, body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100%;
+}
+
+html, body, header, section, footer, div, ul, ol, li, img, a, span, em, del, legend, center, strong, var, fieldset, form, label, dl, dt, dd, cite, input, hr, time, mark, code, figcaption, figure, textarea, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  font-weight: 400;
+  height: 100%;
+  color: $color-default-text;
+}
+
+body {
+  outline: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $color-default-background;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+input[type='button'], input[type='submit'], input[type='reset'] {
+  -webkit-appearance: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, textarea, select {
+  font-size: 100%;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  color: #333333;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+  text-decoration: none;
+}
+
+input {
+  background: rgba(255, 255, 255, 1);
+  -webkit-appearance: none;
+  box-shadow: 0 0 4px 0 rgba(1, 1, 1, 0.5); /*no*/
+  border-radius: 10px; /*no*/
+  color: rgba(167, 167, 167, 1);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"], input[type="text"] {
+  -moz-appearance: textfield;
+}
+
+input[type="submit"], input[type="button"] {
+  &:active {
+    opacity: .7;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
